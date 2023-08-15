@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Logo from "../logo.png";
-import TV from "../tv.png"
-import Strange1 from "../strange1.jpg"
-import Strange2 from "../strange2.png"
+import TV from "../tv.png";
+import Strange1 from "../strange1.jpg";
+import Strange2 from "../strange2.png";
+import Kids from "../kids.png"
 export default function Home() {
   return (
     <main>
@@ -60,8 +61,8 @@ export default function Home() {
         <p className="body">
           Save your favorites easily and always have something to watch.
         </p>
-          <Image src={Strange1} alt="strange one" />
-          <Image className="strange2" src={Strange2} alt="strange two" />
+          <Image src={Strange1} alt="All movies/TV shows are downloadable" />
+          <Image className="strange2" src={Strange2} alt="All movies/TV shows are downloadable" />
       </section>
       <hr className="line line3" />
       <section className="sec3">
@@ -71,6 +72,23 @@ export default function Home() {
         <p className="body">
           Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.
         </p>
+      </section>
+      <hr className="line line4"/>
+      <section className="sec4">
+        <h1>
+          Create profiles for kids
+        </h1>
+        <p className="body">
+          Send kids on adventures with their favorite characters in a space made just for them--free from your membership.
+        </p>
+        <Image src={Kids} alt="Kids" />
+      </section>
+      <hr className="line line5" />
+      <section className="sec5">
+        <h1>Frequently asked questions</h1>
+        <div className="faq">
+
+        </div>
       </section>
     </main>
   );

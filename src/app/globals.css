@@ -2,26 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.header {
+  width: 100%;
+  height: 80vh;
+  background-image: url('../background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3% 5%;
+}
+nav {
+  padding: 3% 1%;
+}
+.signin {
+  background-color: red;
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.logo {
+  width: 30vw;
+  height: 5vh;
+}
+.h1 {
+  margin-top: 8vh;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.body {
+  font-size: 1.2rem;
+}
+input {
+  display: block;
+  width: 85%;
+  height: 8vh;
+  margin: 3vh auto;
+  background-color: black;
+  opacity: 0.6;
+  border: 1px solid rgb(224, 218, 218);
+  text-align: left;
+  padding-left: 5vw;
+  color: #fff;
+}
+.get-started {
+  height: 7vh;
+  font-size: 1.3rem;
+}
+button svg {
+  display: inline;
+}
+.line {
+  height: 2vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  top: -0.2vh;
+  border: none;
+}
+.sec1, .sec2, .sec3 {
+  height: 75vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  top: -.4vh;
+  border: none;
+  padding: 5vh ;
+}
+.sec1 h1 {
+  margin-bottom: 2vh;
+}
+.sec1 .body {
+  font-size: 1.1rem;
+  margin-bottom: 5vh;
+}
+.line2 {
+  top: -0.5vh;
+}
+.sec2 {
+  height: 85vh;
+  top: -.8vh;
+  text-align: center;
+}
+.strange2 {
+  position: relative;
+  left: 8vw;
+}
+.line3 {
+  top: -0.9vh;
+}
+.sec3 {
+  top: -1vh;
+  height: 35vh;
+}
+@media only screen and (min-width: 900px) {
+  .header {
+    height: 100vh;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }

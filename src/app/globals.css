@@ -9,9 +9,7 @@
   color: #fff;
   text-align: center;
 }
-:root {
-  
-}
+
 .header {
   width: 100%;
   height: 80vh;
@@ -70,7 +68,7 @@ button svg {
   top: -0.2vh;
   border: none;
 }
-.sec1, .sec2, .sec3, .sec4, .sec5{
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6{
   height: 75vh;
   width: 100%;
   background-color: black;
@@ -116,12 +114,41 @@ button svg {
 }
 .sec5 {
   top: -1.7vh;
-  min-height: 80vh;
+  height: auto;
 }
-.faq {
-  display: flex;
+.accordions {
+  margin: 5vh auto;
 }
+.line6 {
+  top: -1.8vh;
+}
+.sec6 {
+  top: -2vh;
+  text-align: left;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+}
+.sec6 p, ul li {
+  text-align: left;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 407px) and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
 @media only screen and (min-width: 900px) {
+
   .header {
     height: 100vh;
   }

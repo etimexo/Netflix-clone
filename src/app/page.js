@@ -9,7 +9,11 @@ import Plus from "../../public/plus.svg";
 import Cancel from "../../public/cancel.svg";
 import { useState } from "react";
 import "../components/accordion.css";
+import Input from "../components/Input";
+// import Page from './signin/'
+// import Sign from './Page'
 import Accordion from "@/components/Accordion";
+import Link from "next/link";
 export default function Home() {
   const [faq1Clicked, setFaq1Clicked] = useState(false);
   function handleClick() {}
@@ -20,7 +24,13 @@ export default function Home() {
           <div className="logo">
             <Image src={Logo} alt="Netflix logo" className="logo" />
           </div>
-          <button className="signin">Sign in</button>
+          <Link href='/sign'>
+          <button className="signin">
+            
+            Sign in
+            
+          </button>
+          </Link>
         </nav>
         <h1 className="h1">Unlimited movies, TV shows and more</h1>
         <h1 className="body">Watch anywhere. Cancel anytime.</h1>
@@ -31,7 +41,8 @@ export default function Home() {
         </h1>
         <form action="">
           <label htmlFor="email">
-            <input type="email" placeholder="Email address" />
+            {/* <input type="email" placeholder="Email address" /> */}
+            <Input type={"email"} placeholder={"Email address"} />
           </label>
           <button type="submit" className="signin get-started">
             Get started
@@ -116,7 +127,8 @@ export default function Home() {
             title="What can I watch on Netflix?"
             content="Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want."
           />
-          <Accordion className="accordlast"
+          <Accordion
+            className="accordlast"
             title="Is Netflix good for kids?"
             content="The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br /> Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."
           />
@@ -151,22 +163,58 @@ export default function Home() {
       <section className="sec6">
         <p className="link">Questions? Contact us.</p>
         <ul className="grid-container">
-          <li className="item item1"><u>FAQ</u></li>
-          <li className="item item"><u>Account</u></li>
-          <li className="item item3"><u>Investor Relations</u></li>
-          <li className="item item4"><u>Ways to Watch</u></li>
-          <li className="item item5"><u>Privacy</u></li>
-          <li className="item item6"><u>Corporate Information</u></li>
-          <li className="item item7"><u>Speed Test</u></li>
-          <li className="item item8"><u>Only on Netflix</u></li>
-          <li className="item item9"><u>Help Center</u></li>
-          <li className="item item10"><u>Media Center</u></li>
-          <li className="item item11"><u>Jobs</u></li>
-          <li className="item item12"><u>Terms of Use</u></li>
-          <li className="item item13"><u>Cookie Preferences</u></li>
-          <li className="item item14"><u>Contact Us</u></li>
-          <li className="item item15"><u>Legal Notices</u></li>
+          <li className="item item1">
+            <u>FAQ</u>
+          </li>
+          <li className="item item">
+            <u>Account</u>
+          </li>
+          <li className="item item3">
+            <u>Investor Relations</u>
+          </li>
+          <li className="item item4">
+            <u>Ways to Watch</u>
+          </li>
+          <li className="item item5">
+            <u>Privacy</u>
+          </li>
+          <li className="item item6">
+            <u>Corporate Information</u>
+          </li>
+          <li className="item item7">
+            <u>Speed Test</u>
+          </li>
+          <li className="item item8">
+            <u>Only on Netflix</u>
+          </li>
+          <li className="item item9">
+            <u>Help Center</u>
+          </li>
+          <li className="item item10">
+            <u>Media Center</u>
+          </li>
+          <li className="item item11">
+            <u>Jobs</u>
+          </li>
+          <li className="item item12">
+            <u>Terms of Use</u>
+          </li>
+          <li className="item item13">
+            <u>Cookie Preferences</u>
+          </li>
+          <li className="item item14">
+            <u>Contact Us</u>
+          </li>
+          <li className="item item15">
+            <u>Legal Notices</u>
+          </li>
         </ul>
+        <select>
+          <option className="eng1">
+            English
+          </option>
+        </select>
+        <p className="body">Netflix Nigeria</p>
       </section>
     </main>
   );

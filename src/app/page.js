@@ -10,38 +10,30 @@ import Cancel from "../../public/cancel.svg";
 import { useState } from "react";
 import "../components/accordion.css";
 import Input from "../components/Input";
-// import Page from './signin/'
-// import Sign from './Page'
 import Accordion from "@/components/Accordion";
 import Link from "next/link";
 export default function Home() {
-  const [faq1Clicked, setFaq1Clicked] = useState(false);
   function handleClick() {}
   return (
     <main>
       <section className="header">
         <nav className="navbar flex justify-between">
           <div className="logo">
-            <Image src={Logo} alt="Netflix logo" className="logo" />
+            <div className="logo">NETLIX</div>
           </div>
-          <Link href='/sign'>
-          <button className="signin">
-            
-            Sign in
-            
-          </button>
+          <Link href="/sign">
+            <button className="signin">Sign in</button>
           </Link>
         </nav>
         <h1 className="h1">Unlimited movies, TV shows and more</h1>
         <h1 className="body">Watch anywhere. Cancel anytime.</h1>
         <br />
-        <h1 className="body">
+        <h3 className="body body2">
           Ready to watch? Enter your email <br className="temp" /> to create or
           restart your <br /> membership
-        </h1>
+        </h3>
         <form action="">
           <label htmlFor="email">
-            {/* <input type="email" placeholder="Email address" /> */}
             <Input type={"email"} placeholder={"Email address"} />
           </label>
           <button type="submit" className="signin get-started">
@@ -65,25 +57,37 @@ export default function Home() {
       </section>
       <hr className="line" />
       <section className="sec1">
-        <h1 className="">Enjoy your TV</h1>
-        <p className="body">
-          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
-          players, and more.
-        </p>
-        <Image src={TV} alt="A TV" />
+        <div className="tvb">
+          <h1 className="h1">Enjoy your TV</h1>
+          <p className="body">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+        </div>
+        <Image className="tv" src={TV} alt="A TV" />
       </section>
       <hr className="line line2" />
       <section className="sec2">
-        <h1>Download your shows to watch offline</h1>
-        <p className="body">
-          Save your favorites easily and always have something to watch.
-        </p>
-        <Image src={Strange1} alt="All movies/TV shows are downloadable" />
-        <Image
-          className="strange2"
-          src={Strange2}
-          alt="All movies/TV shows are downloadable"
-        />
+        <div className="m">
+          <h1 className="m">Download your shows to watch offline</h1>
+          <p className="body">
+            Save your favorites easily and always have something to watch.
+          </p>
+        </div>
+        <div>
+          <Image src={Strange1} className="strange1" alt="All movies/TV shows are downloadable" />
+          <Image
+            className="strange2"
+            src={Strange2}
+            alt="All movies/TV shows are downloadable"
+          />
+        </div>
+        <div>
+          <h1 className="">Download your shows to watch offline</h1>
+          <p className="body">
+            Save your favorites easily and always have something to watch.
+          </p>
+        </div>
       </section>
       <hr className="line line3" />
       <section className="sec3">
@@ -210,9 +214,7 @@ export default function Home() {
           </li>
         </ul>
         <select>
-          <option className="eng1">
-            English
-          </option>
+          <option className="eng1">English</option>
         </select>
         <p className="body">Netflix Nigeria</p>
       </section>

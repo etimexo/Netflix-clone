@@ -48,6 +48,7 @@
     align-items: center;
     position: relative;
     margin-top: -10px;
+    height: 70px;
 }
 .signin form .checkbox {
     line-height: 17px;
@@ -62,3 +63,35 @@
     font-weight: lighter;
     font-size: 1rem;
 }
+.light {
+    font-weight: lighter;
+    color: rgb(255, 247, 247);
+}
+.lighter {
+    font-size: .9rem;
+}
+.learn {
+    color: blue;
+    font-size: 1.1rem;
+}
+.hrs {
+    /* position: relative;
+    margin-bottom: 10vh; */
+    text-align: center;
+    height: 10px;
+    /* width: 100%; */
+    margin-top: 10vh;
+    color: rgb(255, 242, 242);
+}
+.faq2 {
+    margin-top: 3vh;
+    padding-bottom: 8vh;
+}
+.faq2 .light {
+    font-size: .8rem;
+}
+.grid2-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+

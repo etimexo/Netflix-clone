@@ -9,30 +9,38 @@ export default function Page() {
     <>
       <div className="signin">
         <div className="form">
-          {/* <Image className="logos" src={Logo} /> */}
           <h1 className="logos">NETLIX</h1>
           <h2>Sign in</h2>
           <form method="GET">
             <label className="email" htmlFor="email">
-              {/* <input type="email" placeholder="Email or phone number" /> */}
               <Input type={"email"} placeholder={"Email or phone number"} />
             </label>
             <label className="password" htmlFor="password">
-              {/* <input type="password" placeholder="Password" /> */}
               <Input type={"password"} placeholder={"Password"} />
             </label>
             <button type="submit">Sign in</button>
             <div className="rem">
               <label htmlFor="checkbox">
-                {/* <input className="checkbox" type="checkbox" /> */}
                 <Input className={"checkbox"} type={"checkbox"} />
                 </label>Remember me
               <p className="body">Need help?</p>
             </div>
-            <p>New to Netflix?  <b>Sign up now.</b></p>
+            <p className="light">New to Netflix?  <b>Sign up now.</b></p>
+            <p className="light lighter">This page is protected by Google reCAPTCHA to ensure you are not a bot. <span className="learn">Lean more.</span> </p>
           </form>
         </div>
+        <hr className="hrs" />
+        <p className="light">Questions? Contact us.</p>
+        <ul className="faq2 grid2-container">
+          <li className="light item">FAQ</li>
+          <li className="light item">Terms of Use</li>
+          <li className="light item">Cookie Preferences</li>
+          <li className="light item">Help Center</li>
+          <li className="light item">Privacy</li>
+          <li className="light item">Corporate Informatioin</li>
+        </ul>
       </div>
+      
     </>
   );
 }

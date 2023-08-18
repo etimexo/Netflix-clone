@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Logo from "../logo.png";
 import TV from "../tv.png";
 import Strange1 from "../strange1.jpg";
 import Strange2 from "../strange2.png";
@@ -83,7 +82,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <h1 className="">Download your shows to watch offline</h1>
+          <h1 className="h1">Download your shows to watch offline</h1>
           <p className="body">
             Save your favorites easily and always have something to watch.
           </p>
@@ -91,20 +90,31 @@ export default function Home() {
       </section>
       <hr className="line line3" />
       <section className="sec3">
-        <h1>Watch everywhere</h1>
+        <div>
+        <h1 className="h1">Watch everywhere</h1>
         <p className="body">
           Stream unlimited movies and TV shows on your phone, tablet, laptop and
           TV.
         </p>
+        </div>
       </section>
       <hr className="line line4" />
       <section className="sec4">
+        <div className="m">
         <h1>Create profiles for kids</h1>
         <p className="body">
           Send kids on adventures with their favorite characters in a space made
           just for them--free from your membership.
         </p>
+        </div>
         <Image src={Kids} alt="Kids" />
+        <div className="d">
+        <h1>Create profiles for kids</h1>
+        <p className="body">
+          Send kids on adventures with their favorite characters in a space made
+          just for them--free from your membership.
+        </p>
+        </div>
       </section>
       <hr className="line line5" />
       <section className="sec5">

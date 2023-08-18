@@ -186,7 +186,7 @@ select {
   .sec1 .tvb {
     width: 40%;
   }
-  .sec1 .tvb .h1 {
+  .sec1 .tvb .h1, .sec2 .h1, .sec3 .h1 {
     margin-bottom: 3vh;
     font-size: 3rem;
     text-align: left;
@@ -198,7 +198,7 @@ select {
     margin-top: 5vh;
     padding-left: 5vw;
   }
-  .sec1 .body {
+  .sec1 .body, .sec2 .body, .sec3 .body {
     text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
@@ -212,7 +212,28 @@ select {
   }
   .sec2 .strange1 {
     height: 400px;
-    width: 100%;
+    width: 800px;
+  }
+  .sec2 .h1 {
+    font-size: 2.8rem;
+  }
+  .sec2 .strange2 {
+    position: relative;
+    margin-left: 1.8vw;
+    width: 350px;
+  }
+  .sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+  }
+  .sec3 .h1 {
+    text-align: center;
+  }
+  .sec4 .m {
+    display: none;
   }
 }
 

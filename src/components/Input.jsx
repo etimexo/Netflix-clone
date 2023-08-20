@@ -6,6 +6,7 @@ export default function Input(props) {
       type={props.type}
       placeholder={props.placeholder}
       className={props.className}
+      required
     />
   );
 }

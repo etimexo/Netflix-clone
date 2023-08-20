@@ -33,7 +33,7 @@ export default function Home() {
         </h3>
         <form action="">
           <label htmlFor="email">
-            <Input type={"email"} placeholder={"Email address"} />
+            <Input type={"email"} placeholder={"Email address"} className={"input1"} />
           </label>
           <button type="submit" className="signin get-started">
             Get started
@@ -104,17 +104,10 @@ export default function Home() {
         <h1>Create profiles for kids</h1>
         <p className="body">
           Send kids on adventures with their favorite characters in a space made
-          just for them--free from your membership.
+          just for them free from your membership.
         </p>
         </div>
         <Image src={Kids} alt="Kids" />
-        <div className="d">
-        <h1>Create profiles for kids</h1>
-        <p className="body">
-          Send kids on adventures with their favorite characters in a space made
-          just for them--free from your membership.
-        </p>
-        </div>
       </section>
       <hr className="line line5" />
       <section className="sec5">
@@ -152,7 +145,7 @@ export default function Home() {
         </p>
         <form action="">
           <label htmlFor="email">
-            <input type="email" placeholder="Email address" />
+            <input type="email" placeholder="Email address" className={"input1"} />
           </label>
           <button type="submit" className="signin get-started">
             Get started

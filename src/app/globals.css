@@ -8,7 +8,6 @@
   box-sizing: border-box;
   color: #fff;
   text-align: center;
-  border: 1px solid  red;
 }
 main{
   background-color: black;
@@ -145,6 +144,9 @@ select {
   padding: 5px 10px;
   margin: 3vh 0;
 }
+.item:hover, .item:focus {
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 407px) and (max-width: 600px) {
   .grid-container {
@@ -154,14 +156,25 @@ select {
 }
 @media only screen and (min-width: 601px) {
   .header {
-    height: 100vh;
+    min-height: 105vh;
   }
   .logo {
     width: 20vw;
     height: 10vh;
     color: red;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signin {
+    height: 8vh;
+    /* width: 8vw; */
+  }
+  .signin:hover, .signin:focus {
+    background-color: rgb(187, 20, 20);
+    cursor: pointer;
   }
   .grid-container {
     display: grid;
@@ -175,6 +188,16 @@ select {
   }
   .header .body br {
     display: none;
+  }
+  .header .h1 {
+    font-size: 3.5rem;
+  }
+  .input1 {
+    width: 30vw;
+    display: inline-block;
+    margin-right: 20px;
+    /* padding-left: 20px; */
+    padding: 10px 20px;
   }
   .sec1 {
     display: flex;
@@ -232,14 +255,19 @@ select {
   .sec3 .h1 {
     text-align: center;
   }
-  .sec4 .m {
-    display: none;
+  .sec4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
-}
-
-@media only screen and (min-width: 900px) {
-
-  /* .header {
-    height: 100vh;
-  } */
+  .sec4 h1 {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .sec4 .body {
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+  }
 }

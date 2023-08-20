@@ -5,6 +5,9 @@ import Image from "next/image";
 import Input from "../../components/Input";
 
 export default function Page() {
+  function clicked() {
+    alert("NB: This is just a clone of Netlfix's site. If you really wanna experience Netflix, go to their real site.")
+  }
   return (
     <div className="mained">
       <div className="signed">
@@ -18,7 +21,7 @@ export default function Page() {
             <label className="password" htmlFor="password">
               <Input type={"password"} placeholder={"Password"} />
             </label>
-            <button type="submit">Sign in</button>
+            <button onClick={clicked} type="submit">Sign in</button>
             <div className="rem">
               <label htmlFor="checkbox">
                 <Input className={"checkbox"} type={"checkbox"} />

@@ -81,12 +81,12 @@ export default function Home() {
             alt="All movies/TV shows are downloadable"
           />
         </div>
-        <div>
+        {/* <div>
           <h1 className="h1">Download your shows to watch offline</h1>
           <p className="body">
             Save your favorites easily and always have something to watch.
           </p>
-        </div>
+        </div> */}
       </section>
       <hr className="line line3" />
       <section className="sec3">

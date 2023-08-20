@@ -229,9 +229,17 @@ select {
   .sec2 {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
   }
-  .sec2 .m {
-    display: none;
+  .sec2 .body {
+    position: relative;
+    margin-left: -5vw;
+    text-align: left;
+  }
+  .sec2 h1 {
+    text-align: left;
+    position: relative;
+    margin-left: -5vw;
   }
   .sec2 .strange1 {
     height: 400px;
